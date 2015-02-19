@@ -39,3 +39,11 @@ depsort({
 
 - [MIT license](LICENSE)
 - Made by [Adam Renklint](http://adamrenklint.com) in Berlin, February 2015
+
+## Changelog
+
+- **1.0.0**
+  - Initial release, ported from ```<bap>``` project
+- **1.1.0**
+  - Added unit tests
+  - Fixed regexp to ignore false positives
