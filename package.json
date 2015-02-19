@@ -1,0 +1,26 @@
+{
+  "name": "gulp-depsort",
+  "version": "1.0.0",
+  "description": "sort a set of files based in their internal references to each other",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adamrenklint/gulp-depsort.git"
+  },
+  "keywords": [
+    "gulp",
+    "sort",
+    "dependencies"
+  ],
+  "author": "Adam Renklint <adam@renklint.com> (http://adamrenklint.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adamrenklint/gulp-depsort/issues"
+  },
+  "homepage": "https://github.com/adamrenklint/gulp-depsort",
+  "dependencies": {
+    "gulp": "^3.8.11",
+    "through2": "^0.6.3",
+    "tsort": "0.0.1"
+  }
+}
