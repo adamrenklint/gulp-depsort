@@ -12,6 +12,9 @@
     "sort",
     "dependencies"
   ],
+  "scripts": {
+    "test": "node_modules/gulp/bin/gulp.js test"
+  },
   "author": "Adam Renklint <adam@renklint.com> (http://adamrenklint.com)",
   "license": "MIT",
   "bugs": {

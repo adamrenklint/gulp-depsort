@@ -20,9 +20,16 @@ function sort (files) {
     var contents = file.contents.toString();
 
     ids.forEach(function (deepId) {
-      var re = new RegExp(deepId, 'gi');
+      var dividers = ['"', '\\s', "'", '>', '<', '\\.', ',', ':'];
+      var joinedPlain = '(' + dividers.join('|') + ')';
+      var joinedStart = '(' + ['^'].concat(dividers).join('|') + ')';
+      var joinedEnd = '(' + ['$'].concat(dividers).join('|') + ')';
+      var re = new RegExp(joinedStart + deepId + joinedEnd, 'gi');
       var matches = contents.match(re);
       matches && matches.forEach(function (match) {
+        var replaceStart = new RegExp('^' + joinedPlain);
+        var replaceEnd = new RegExp(joinedPlain + '$');
+        match = match.replace(replaceStart, '').replace(replaceEnd, '');
         if (match !== id && map[match]) {
           graph.add(match, id);
         }
