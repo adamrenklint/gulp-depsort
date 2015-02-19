@@ -47,3 +47,5 @@ depsort({
 - **1.1.0**
   - Added unit tests
   - Fixed regexp to ignore false positives
+- **1.1.1**
+  - Added readme banners for CI status, code quality, up-to-date dependencies
