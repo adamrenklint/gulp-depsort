@@ -1,5 +1,8 @@
 # gulp-depsort
 
+[![NPM version](https://badge.fury.io/js/gulp-depsort.png)](http://badge.fury.io/js/gulp-depsort) [![Build Status](https://travis-ci.org/adamrenklint/gulp-depsort.png?branch=master)](https://travis-ci.org/adamrenklint/gulp-depsort) [![Code Climate](https://codeclimate.com/github/adamrenklint/gulp-depsort.png)](https://codeclimate.com/github/adamrenklint/gulp-depsort) [![Dependency Status](https://david-dm.org/adamrenklint/gulp-depsort.png?theme=shields.io)](https://david-dm.org/adamrenklint/gulp-depsort)
+
+
 > sort a set of files based in their internal references to each other
 
 ## Installation
