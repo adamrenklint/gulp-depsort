@@ -15,7 +15,7 @@ In your gulpfile:
 var depsort = require('gulp-depsort');
 
 gulp.task('compile', function () {
-  gulp.src('pages/**.html')
+  gulp.src('src/*.html')
     .pipe(depsort())
     .pipe(compileAndConcatTask())
     .pipe(gulp.dest('build'));
